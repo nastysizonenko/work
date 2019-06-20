@@ -1,0 +1,55 @@
+<!doctype html>
+<head>
+
+    <title> Упражнение 11(5)</title>
+    <script type="text/javascript">
+        function showMsg(){
+
+            alert("Hi")
+
+        }
+        var message = showMsg
+
+        message()
+        showMsg()
+
+
+        //Функциональное выражение
+        var showMsg =function (){
+            alert("Hi")
+        }
+        var message = showMsg
+
+        message()
+        showMsg()
+
+
+        //Анонимная функция
+        (function(){
+            alert("Hi")
+        }
+        (function(){
+            var b = 'Hi!'
+            alert( b)
+        }
+        ())
+        ())
+
+
+        //Стрелочная функция
+
+        var showMsg = ()=>{ alert("Hi")} //
+        var message = showMsg
+
+        message()
+        showMsg()
+
+
+
+
+    </script>
+</head>
+<body>
+<input type="button" value="Результат" onclick=" showMsg()">
+</body>
+</html>

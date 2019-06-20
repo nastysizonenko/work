@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+
+<title> Упражнение 11(1)</title>
+<script type="text/javascript">
+  
+function cout_number_digits(n){
+  if (n==0){
+    return 0;
+  }
+  else {
+    return n % 10 + cout_number_digits(Math.floor(n/10))
+  }
+}
+alert(cout_number_digits(3917));
+
+
+//факториал
+function factorial (n){
+
+   if (n==0){
+    return 1
+  }
+    else  {
+      return n *factorial(n-1)  }
+}
+alart(factorial(3))
+</script>
+</head>
+<body>
+<input type="button" value="Результат" onclick="sum()">
+
+</body>
+</html>
